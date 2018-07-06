@@ -83,7 +83,7 @@ public class EnrollFrame extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO 自动生成的方法存根
 				EnrollFrame.this.dispose();
-				new MyFrame(client);
+				new MyFrame();
 			}
 		});
     }
@@ -188,7 +188,7 @@ public class EnrollFrame extends JFrame {
                     JOptionPane.showMessageDialog(EnrollFrame.this,
                             "注册成功");
                     EnrollFrame.this.dispose();
-                    new MyFrame(client);
+                    new MyFrame();
                 }
                 else {
                     JOptionPane.showMessageDialog(EnrollFrame.this, "注册失败,用户存在");

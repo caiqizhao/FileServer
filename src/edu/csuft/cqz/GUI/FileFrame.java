@@ -25,7 +25,7 @@ public class FileFrame extends JFrame{
     private JLabel jLabel;
 	private JTable jTable;
 	private DefaultTableModel defaultTableModel;
-	private JButton button,button2,button3;
+	private JButton button,button2,button3,button4;
 	private static String str[]= {"文件名","上传日期","文件大小"};
 	private String user_name;
 	private Client client;
@@ -164,6 +164,15 @@ public class FileFrame extends JFrame{
                 }
             }
         });
+
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FileFrame.this.dispose();
+                client.exitUser(user_name);
+                new MyFrame();
+            }
+        });
     }
 
 
@@ -209,10 +218,12 @@ public class FileFrame extends JFrame{
 		button=new JButton("上传");
 		button2=new JButton("下载");
 		button3=new JButton("删除");
+		button4=new JButton("退出");
 		jPanel.add(jLabel);
 		jPanel.add(button);
 		jPanel.add(button2);
 		jPanel.add(button3);
+		jPanel.add(button4);
 		this.add(jPanel,BorderLayout.SOUTH);
 		
 	}

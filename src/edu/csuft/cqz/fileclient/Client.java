@@ -56,6 +56,9 @@ public class Client {
 
     /**
      * 登陆客户端
+     * @param name
+     * @param password
+     * @return
      */
     public boolean land(String name, String password) {
         OutputStream outputStream = null;

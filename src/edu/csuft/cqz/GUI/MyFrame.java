@@ -26,17 +26,17 @@ public class MyFrame extends JFrame {
         initButton();
     }
 
-    public MyFrame(Client client){
-        this.client=client;
-        this.setLayout(new FlowLayout());
-        init();
-        Dimension dimension=getToolkit().getScreenSize();
-        this.setBounds(dimension.width/2-150,dimension.height/2-125,300,250);
-        this.setDefaultCloseOperation(3);
-        this.setResizable(false);
-        this.setVisible(true);
-        initButton();
-    }
+//    public MyFrame(Client client){
+//        this.client=client;
+//        this.setLayout(new FlowLayout());
+//        init();
+//        Dimension dimension=getToolkit().getScreenSize();
+//        this.setBounds(dimension.width/2-150,dimension.height/2-125,300,250);
+//        this.setDefaultCloseOperation(3);
+//        this.setResizable(false);
+//        this.setVisible(true);
+//        initButton();
+//    }
 
 
     /**
